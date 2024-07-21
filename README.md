@@ -4,7 +4,7 @@
 ## 启动方法
 ### 编译成docker
 运行docker需要配置五个环境变量，bottoken为telegram的token，ALLOWED_USER_ID为你的对话id， host，port，secret为aria2下载器的地址
-'''
+```python
 docker run --network host \
   -e BOT_TOKEN=dasdqweqweqweqw \
   -e ALLOWED_USER_ID=121111111 \
@@ -13,7 +13,7 @@ docker run --network host \
   -e secret=password \
   --restart unless-stopped \
   sukebei-bot:latest
-'''
+```
 
 ### 直接运行python
 对python代码从环境变量取值的几处填成值就可以了运行了
